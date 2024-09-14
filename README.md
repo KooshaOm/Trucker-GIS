@@ -49,9 +49,9 @@ In this demo, users select the “Food” filter button to focus on nearby resta
 
 ### Live Traffic Information
 
-The live traffic information feature highlights the optimal route based on the A* algorithm, marking the starting point with a green flag and the destination with a checkered flag. Traffic conditions are color-coded (blue for not busy, yellow for little busy, and orange for very busy), and users receive descriptive navigational instructions along with statistics such as estimated distance and time of arrival.
+The live traffic information feature highlights the optimal route based on the A* algorithm, marking the starting point with a green flag and the destination with a checkered flag. Traffic conditions are colour-coded (blue for not busy, yellow for little busy, and orange for very busy), and users receive descriptive navigational instructions along with statistics such as estimated distance and time of arrival.
 
-*Picture illustrating Live Traffic Information will be provided here.*
+![Live Traffic Information Diagram](media/traffic_map_picture.png)
 
 ## Technical Design Details
 
@@ -66,7 +66,8 @@ The weather information system processes real-time weather data as follows:
    - **`toggleWeatherToolTipBtnCbk`**: Triggered when a user clicks the weather icon, displaying the temperature tooltip.
    - **`getWeatherDetailCbk`**: Activated when the user clicks the “Weather Information” button to show detailed weather information.
 
-*Diagram illustrating the Weather Information System workflow will be provided here.*
+![Weather Information System Workflow](media/weather_api_technical_diagram.png)
+
 
 ### Categorical Filters
 
@@ -76,7 +77,7 @@ The categorical filters are designed to efficiently display points of interest (
 2. **Filter Activation**: When a user selects a filter, a callback function connects the frontend component to the backend. The system checks if the zoom level is appropriate, adjusting it if necessary to ensure localized results.
 3. **Windowing Algorithm**: A windowing algorithm searches the `unordered_map` for POIs within the user's viewing window based on latitude and longitude coordinates. The use of `unordered_map` and constant-time complexity ensures rapid performance of the filter.
 
-*Diagram depicting the design and functionality of the Categorical Filters will be provided here.*
+![Categorical Filters Workflow](media/categorical_api_technical_diagram.png)
 
 ### Live Traffic Information
 
@@ -84,10 +85,11 @@ The categorical filters are designed to efficiently display points of interest (
 The live traffic information feature provides real-time traffic updates on the map:
 1. **Traffic API Call**: When the user requests the fastest path, Trucker GIS makes an API call to TomTom Traffic to obtain traffic data in JSON format.
 2. **Data Parsing**: The JSON data is parsed to extract relevant traffic information.
-3. **Traffic Interpretation**: A handler service interprets the traffic data, assigning colors to different traffic conditions (blue for not busy, yellow for little busy, and orange for very busy).
-4. **Map Update**: The event controller uses the interpreted data to highlight the optimal path on the map with color-coded traffic information. The handler service is responsible for drawing the path and its color segments on the map.
+3. **Traffic Interpretation**: A handler service interprets the traffic data, assigning colours to different traffic conditions (blue for not busy, yellow for little busy, and orange for very busy).
+4. **Map Update**: The event controller uses the interpreted data to highlight the optimal path on the map with colour-coded traffic information. The handler service is responsible for drawing the path and its colour segments on the map.
 
-*Diagram showing the implementation of Live Traffic Information will be provided here.*
+![Live Traffic Information Workflow](media/traffic_api_technical_diagram.png)
+
 
 ### Pathfinding Algorithm
 
@@ -97,7 +99,8 @@ The pathfinding algorithm enhances efficiency using the Linear Range of Distance
 2. **Distance Calculation**: The straight-line distance is divided by the maximum speed limit to estimate travel time from the intersection to the dashed line.
 3. **Path Selection**: Paths are evaluated based on their intersections' proximity to the dashed line and turn penalties. The algorithm selects the path with the best overall efficiency, highlighted in blue.
 
-*Diagram explaining the Linear Range of Distances (LRD) heuristic used in the Pathfinding Algorithm will be provided here.*
+![LRD Diagram](media/LRD_diagram.png)
+
 
 ## Design Principles
 
