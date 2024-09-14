@@ -7,7 +7,7 @@
 3. [Demos & Examples](#demos--examples)
    - [Weather Features Demo](#weather-features-demo)
    - [Categorical Filters Demo](#categorical-filters-demo)
-   - [Live Traffic Information](#live-traffic-information)
+   - [Live Traffic Information Demo](#live-traffic-information)
 4. [Technical Design Details](#technical-design-details)
    - [Weather Information System](#weather-information-system)
    - [Categorical Filters](#categorical-filters)
