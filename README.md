@@ -39,13 +39,13 @@ The project involved designing a Geographic Information System (GIS) fully imple
 
 This demo showcases the weather icon located at the bottom of the map. Clicking the icon toggles a point weather tooltip that displays the live temperature at the user's cursor location. For detailed weather information, users can press the "Weather Information" button to open a pop-up with specific details such as current, minimum, maximum temperatures, and weather conditions.
 
-*Video demonstrating the Weather Features will be provided here.*
+Watch the demo here: [Weather Features Demo](https://youtu.be/7-6F3Xsk5zo)
 
 ### Categorical Filters Demo
 
 In this demo, users select the “Food” filter button to focus on nearby restaurants. Clicking the filter button places pins on the map indicating different restaurants. Users can click on a restaurant name to center the view on it and get more information. The demo also shows how users can switch between options and clear filters by clicking on an intersection.
 
-*Video demonstrating the Categorical Filters will be provided here.*
+Watch the demo here: [Categorical Filters Features Demo](https://youtu.be/zuA96Qjhktw)
 
 ### Live Traffic Information
 
