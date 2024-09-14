@@ -118,17 +118,19 @@ Trucker GIS emphasizes usability and responsiveness:
    - **Gap**: Current GIS solutions do not simplify the route planning process for including pit stops.
    - **Plan**: Implement preset pit stops that drivers can toggle to plan routes with detours. This will involve using a multi-Dijkstra algorithm to handle multiple destinations.
    - **Implementation**: Develop a feature to automatically adjust routes based on desired pit stops, providing seamless route planning for long trips.
+
    ![Pit Stop Concept](media/pit_stops_concept.png)
 
 2. **Customization for Truck Specifications**:
    - **Gap**: Existing GIS systems do not customize routes for large diesel/gas trucks with specific travel restrictions.
    - **Plan**: Implement a sidebar tool for selecting truck models to provide custom routes, speed calculations, and fuel consumption estimates.
    - **Implementation**: Add a selection tool to account for vehicle specifications, enhancing route planning and arrival time estimates based on truck-specific parameters.
+
    ![Vehicile Selection Concept](media/vehicle_selection_concept.png)
 
 ## Glossary
 
-- **Heuristic (in A* Algorithm)**: A function used to estimate the cost from a current state to the goal state, guiding the search towards the most promising paths.
+- **Heuristic (in A\* Algorithm)**: A function used to estimate the cost from a current state to the goal state, guiding the search towards the most promising paths.
   
 - **Linear Range of Distances (LRD)**: A heuristic in pathfinding that calculates the straight-line distance from an intersection to the optimal path and uses this information to improve path selection efficiency.
 
