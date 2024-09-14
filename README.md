@@ -99,7 +99,12 @@ The pathfinding algorithm enhances efficiency using the Linear Range of Distance
 2. **Distance Calculation**: The straight-line distance is divided by the maximum speed limit to estimate travel time from the intersection to the dashed line.
 3. **Path Selection**: Paths are evaluated based on their intersections' proximity to the dashed line and turn penalties. The algorithm selects the path with the best overall efficiency, highlighted in blue.
 
-![LRD Diagram](media/LRD_diagram.png)
+This LRD heuristic boosts the efficiency of the proposed optimal paths by up to 10% versus vanilla A* for more complex paths. The chart provided below shows more details.
+
+<p float="left">
+  <img src="media/LRD_diagram.png" width="400" height="300" />
+  <img src="media/LRD_comparison_chart.png" width="600" height="300" />
+</p>
 
 
 ## Design Principles
