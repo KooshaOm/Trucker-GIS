@@ -1,5 +1,24 @@
 # Trucker GIS
 
+## Table of Contents
+
+1. [Project Overview](#project-overview)
+2. [Key Features](#key-features)
+3. [Demos & Examples](#demos--examples)
+   - [Weather Features Demo](#weather-features-demo)
+   - [Categorical Filters Demo](#categorical-filters-demo)
+   - [Live Traffic Information](#live-traffic-information)
+4. [Technical Design Details](#technical-design-details)
+   - [Weather Information System](#weather-information-system)
+   - [Categorical Filters](#categorical-filters)
+   - [Live Traffic Information](#live-traffic-information-1)
+   - [Pathfinding Algorithm](#pathfinding-algorithm)
+5. [Design Principles](#design-principles)
+6. [Future Plans](#future-plans)
+7. [Glossary](#glossary)
+8. [Contact](#contact)
+9. [Acknowledgements](#acknowledgements)
+
 ## Project Overview
 
 The project involved designing a Geographic Information System (GIS) fully implemented in C++ using OpenStreetMap data. Recognizing that 77.7% of all Canadian goods are transported by truck, this project focuses on addressing the needs of truck drivers—a group often underserved by conventional GIS solutions. Trucker GIS is tailored specifically for truck drivers, providing features that prioritize their requirements and improve their navigational efficiency.
