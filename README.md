@@ -102,7 +102,7 @@ The pathfinding algorithm enhances efficiency using the Linear Range of Distance
 This LRD heuristic boosts the efficiency of the proposed optimal paths by up to 10% versus vanilla A* for more complex paths. The chart provided below shows more details.
 
 <p float="left">
-  <img src="media/LRD_diagram.png" width="400" height="300" />
+  <img src="media/LRD_diagram.png" width="350" height="300" />
   <img src="media/LRD_comparison_chart.png" width="600" height="300" />
 </p>
 
